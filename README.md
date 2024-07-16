@@ -26,7 +26,7 @@
     <li><strong>Ocean Proximity Encoding</strong>: Turned the 'oceanProximity' feature into numbers using one-hot encoding, so our models can use it properly.</li>
 </ul>
 
-<h3><strong>Getting the Data Ready</strong></h3>
+<h3><strong>Separating the data into test and train</strong></h3>
 <p>We split the data into training and testing sets. This helps us make sure our model works well on new, unseen data.</p>
 
 <h3><strong>Training the Models</strong></h3>
@@ -39,10 +39,10 @@
 </ul>
 
 <h4>Random Forest</h4>
-<p>We also tried a Random Forest model. We scaled the data (made sure all the numbers are on a similar scale) to help the model perform better.</p>
+<p>We also tried a Random Forest model.</p>
 
 <h4>Hyperparameter Tuning</h4>
-<p>We tweaked the settings of the Random Forest model to make it work even better.</p>
+<p>We tweaked the settings of the Random Forest model to make it work even better, but was not the case</p>
 
 <h3><strong>Checking How We Did</strong></h3>
 <p>We looked at:</p>
@@ -51,3 +51,17 @@
     <li><strong>RMSE (Root Mean Squared Error)</strong></li>
 </ul>
 <p>These metrics helped us see how accurate our models were and how much error there was in our predictions.</p>
+
+<p>Results that we obtain:</p>
+<ul>
+    <li><strong>R2 Score using Linear Progression: 0.6731</strong></li>
+    <li><strong>RMSE using Linear Progression:66530.45
+</strong></li>
+</ul>
+<ul>
+    <li><strong>R2 Score using Random Forest  0.81285</strong></li>
+    <li><strong>RMSE using Random Forest :50058.15
+</strong></li>
+</ul>
+<h5>As we can see from the performances, using random forest the model was much better</h5>
+
